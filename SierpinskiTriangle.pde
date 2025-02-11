@@ -6,7 +6,7 @@ size(400,400);
 public void draw()
 {
 }
-public void mouseDragged()
+public void mouseDragged()//optional
 {
   sierpinski((int)(Math.random()400),(int)(Math.random()400),(int)(Math.random()255));
 
@@ -20,19 +20,19 @@ void mousePressed() {
     background(255);
   }
 }
-public void sierpinski(int x, int y, int hi) 
+public void sierpinski(int x, int y, int yovanne) 
 {
 
-  if(hi <= 20) {
+  if(yovanne <= 20) {
    fill((int)(Math.random()255),(int)(Math.random()255),(int)(Math.random()*255));
-   triangle(x,y,x+hi,y,x+hi/2,y-hi); 
+   triangle(x,y,x+yovanne,y,x+yovanne/2,y-yovanne); 
 
   }
 
   else{
-   sierpinski(x,y,hi/2);
-    sierpinski(x+hi/2,y,hi/2);
-    sierpinski(x+hi/4,y-hi/2,hi/2);
+   sierpinski(x,y,yovanne/2);
+    sierpinski(x+yovanne/2,y,yovanne/2);
+    sierpinski(x+yovanne/4,y-yovanne/2,yovanne/2);
 
 
   }
