@@ -8,14 +8,14 @@ public void draw()
 }
 public void mouseDragged()//optional
 {
-  sierpinski((int)(Math.random()*400),(int)(Math.random()*400),(int)(Math.random()*255));
+  sierpinski((int)(Math.random()*115),(int)(Math.random()*40),(int)(Math.random()*75));
 
 }
 
 
 void mousePressed() {
   if (mouseButton == LEFT) {
-   sierpinski((int)(Math.random()*400),(int)(Math.random()*400),(int)(Math.random()*255));
+   sierpinski((int)(Math.random()*115),(int)(Math.random()*40),(int)(Math.random()*75));
   } else if (mouseButton == RIGHT) {
     background(255);
   }
@@ -24,7 +24,7 @@ public void sierpinski(int x, int y, int len)
 {
   
   if(len <= 20) {
-   fill((int)(Math.random()*255),(int)(Math.random()*255),(int)(Math.random()*255));
+   fill((int)(Math.random()*115),(int)(Math.random()*40),(int)(Math.random()*75));
    triangle(x,y,x+len,y,x+len/2,y-len); 
 
   }
